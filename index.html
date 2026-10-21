@@ -566,6 +566,7 @@ function render(){
   renderPeople(st, sum);
   renderMatches(st);
 
+  if (!document.getElementById('note')) return;
   const dirty = !same(results, BASE);
   document.getElementById('resetBtn').hidden = !dirty;
   const note = document.getElementById('note');
@@ -602,7 +603,7 @@ function pick(mid, pid){
 
 document.addEventListener('click', e => {
   const el = e.target.closest('[data-pid][data-mid]');
-  if (el && editing) pick(el.dataset.mid, el.dataset.pid);
+  if (el && editing && ADMIN) pick(el.dataset.mid, el.dataset.pid);
 });
 function highlight(pid){
   document.querySelectorAll('.slot.hl').forEach(s => s.classList.remove('hl'));
@@ -657,11 +658,19 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
 /* =========================================================
    ARRANQUE
    ========================================================= */
+/* La edición solo aparece entrando con #admin al final de la URL */
+const ADMIN = location.hash === '#admin';
+window.addEventListener('hashchange', () => location.reload());
+if (!ADMIN){
+  document.querySelector('.adminbar').remove();
+  document.querySelector('.hint').remove();
+}
+
 (async function init(){
   let data = EMBEDDED;
   try { const r = await fetch('torneo.json', {cache:'no-store'}); if (r.ok) data = await r.json(); } catch(e){}
   loadData(data);
-  const local = loadLocal();
+  const local = ADMIN ? loadLocal() : null;
   results = local ? local : {...BASE};
   prune();
   render();
