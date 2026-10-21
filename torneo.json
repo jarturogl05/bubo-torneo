@@ -1,0 +1,181 @@
+{
+  "tournament": {
+    "id": "fuercitas-oficina-2026",
+    "name": "Torneo de Fuercitas - Oficina",
+    "game": "Office Arm Wrestling",
+    "format": "double_elimination",
+    "status": "in_progress",
+    "participantCount": 14,
+    "rules": {
+      "matchFormat": "single",
+      "lossesToEliminate": 2,
+      "grandFinalsReset": true,
+      "allowRematches": true
+    }
+  },
+  "participants": [
+    {
+      "id": "cristina",
+      "name": "Cristina",
+      "team": "Backend",
+      "bio": "Danza aérea y pilates"
+    },
+    {
+      "id": "ale",
+      "name": "Ale",
+      "team": "Front End",
+      "bio": "Box"
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "team": "QA",
+      "bio": "Correr y pesas"
+    },
+    {
+      "id": "viquez",
+      "name": "Víquez",
+      "team": "QA",
+      "bio": "Gimnasio"
+    },
+    {
+      "id": "saul",
+      "name": "Saúl",
+      "team": "QA",
+      "bio": "Gimnasio"
+    },
+    {
+      "id": "carlos-mobile",
+      "name": "Carlos (Mobile)",
+      "team": "Mobile Developer",
+      "bio": "Le gusta comer pan"
+    },
+    {
+      "id": "arturo",
+      "name": "Arturo",
+      "team": "Front End",
+      "bio": "Correr, gimnasio y peso muerto de 100 kg"
+    },
+    {
+      "id": "richi",
+      "name": "Richi",
+      "team": "Front End",
+      "bio": "Gimnasio y correr"
+    },
+    {
+      "id": "omar",
+      "name": "Omar",
+      "team": "PM",
+      "bio": "Levantamiento de tarro de cerveza"
+    },
+    {
+      "id": "sergio",
+      "name": "Sergio",
+      "team": "PM",
+      "bio": "Gimnasio unas 3 horas al día"
+    },
+    {
+      "id": "elliot",
+      "name": "Elliot",
+      "team": "Designer",
+      "bio": "Natación"
+    },
+    {
+      "id": "adrian",
+      "name": "Adrián",
+      "team": "QA",
+      "bio": "Gimnasio"
+    },
+    {
+      "id": "carlos-manager",
+      "name": "Carlos (Manager)",
+      "team": "Manager",
+      "bio": "Bicicleta, básquet y billar de bolsillo"
+    },
+    {
+      "id": "zuriel",
+      "name": "Zuriel",
+      "team": "Reemplazo de Mielisa",
+      "bio": "Actividad física no especificada"
+    }
+  ],
+  "matches": [
+    {
+      "id": "M1",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "omar",
+        "cristina"
+      ],
+      "winnerId": "omar",
+      "status": "completed"
+    },
+    {
+      "id": "M2",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "maya",
+        "carlos-mobile"
+      ],
+      "winnerId": "carlos-mobile",
+      "status": "completed"
+    },
+    {
+      "id": "M3",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "sergio",
+        "elliot"
+      ],
+      "winnerId": "elliot",
+      "status": "completed"
+    },
+    {
+      "id": "M4",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "ale",
+        "viquez"
+      ],
+      "winnerId": "viquez",
+      "status": "completed"
+    },
+    {
+      "id": "M5",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "carlos-manager",
+        "zuriel"
+      ],
+      "winnerId": "zuriel",
+      "status": "completed"
+    },
+    {
+      "id": "M6",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "arturo",
+        "saul"
+      ],
+      "winnerId": "arturo",
+      "status": "completed"
+    },
+    {
+      "id": "M7",
+      "round": "W1",
+      "bracket": "winners",
+      "players": [
+        "richi",
+        "adrian"
+      ],
+      "winnerId": null,
+      "status": "pending"
+    }
+  ]
+}
