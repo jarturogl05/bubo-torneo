@@ -658,9 +658,8 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
 /* =========================================================
    ARRANQUE
    ========================================================= */
-/* La edición solo aparece entrando con #admin al final de la URL */
-const ADMIN = location.hash === '#admin';
-window.addEventListener('hashchange', () => location.reload());
+/* Edición de resultados desactivada. Cambiar a true para volver a habilitarla. */
+const ADMIN = false;
 if (!ADMIN){
   document.querySelector('.adminbar').remove();
   document.querySelector('.hint').remove();
